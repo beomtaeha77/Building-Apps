@@ -1,0 +1,364 @@
+ [  
+    {
+    "id": 1,
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "image": "https://example.com",
+    "description": "A single space where you can think, write, and plan. Capture thoughts and manage projects.",
+    "size": 85,
+    "reviews": 120000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "image": "https://example.com",
+    "description": "A single space where you can think, write, and plan. Capture thoughts and manage projects.",
+    "size": 85,
+    "reviews": 120000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "image": "https://example.com",
+    "description": "Learn a new language with the world's most-downloaded education app.",
+    "size": 110,
+    "reviews": 9500000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 650000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Headspace",
+    "companyName": "Headspace Inc.",
+    "image": "https://example.com",
+    "description": "Meditation and mindfulness for any situation. Sleep better and reduce stress.",
+    "size": 92,
+    "reviews": 280000,
+    "ratingAvg": 4.9,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 35000 },
+      { "name": "5 star", "count": 230000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "image": "https://example.com",
+    "description": "Bring all your team communication into one place for better productivity.",
+    "size": 74,
+    "reviews": 85000,
+    "ratingAvg": 4.1,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "image": "https://example.com",
+    "description": "Organize anything, together. Trello’s boards, lists, and cards enable you to organize projects.",
+    "size": 65,
+    "reviews": 110000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 4500 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 24000 },
+      { "name": "5 star", "count": 70000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Canva",
+    "companyName": "Canva",
+    "image": "https://example.com",
+    "description": "Design anything from logos to social media posts with thousands of free templates.",
+    "size": 150,
+    "reviews": 6000000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 45000 },
+      { "name": "2 star", "count": 85000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 4520000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "image": "https://example.com",
+    "description": "The easiest way to talk over voice, video, and text. Talk, chat, hang out.",
+    "size": 140,
+    "reviews": 4800000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 350000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 450000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Strava",
+    "companyName": "Strava Inc.",
+    "image": "https://example.com",
+    "description": "Track your fitness activity, record runs, map cycling routes and analyze your training.",
+    "size": 105,
+    "reviews": 750000,
+    "ratingAvg": 4.5,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 500000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "image": "https://example.com",
+    "description": "Stream millions of songs and podcasts on any device.",
+    "size": 88,
+    "reviews": 25000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 5500000 },
+      { "name": "5 star", "count": 15000000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Asana",
+    "companyName": "Asana, Inc.",
+    "image": "https://example.com",
+    "description": "The easiest way for teams to track their work and get results.",
+    "size": 68,
+    "reviews": 42000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Pocket",
+    "companyName": "Mozilla",
+    "image": "https://example.com",
+    "description": "Save the stories that matter to you. Read or listen to content later.",
+    "size": 42,
+    "reviews": 150000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 3500 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 24000 },
+      { "name": "5 star", "count": 110000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Evernote",
+    "companyName": "Evernote Corp.",
+    "image": "https://example.com",
+    "description": "Capture ideas when inspiration strikes. Bring your notes, to-dos, and schedule together.",
+    "size": 115,
+    "reviews": 1600000,
+    "ratingAvg": 4.0,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 700000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Figma",
+    "companyName": "Figma, Inc.",
+    "image": "https://example.com",
+    "description": "Mirror your designs and prototypes from your desktop to your mobile device.",
+    "size": 35,
+    "reviews": 12000,
+    "ratingAvg": 3.8,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Grammarly",
+    "companyName": "Grammarly Inc.",
+    "image": "https://example.com",
+    "description": "A keyboard that helps you write clearly, effectively, and mistake-free.",
+    "size": 95,
+    "reviews": 400000,
+    "ratingAvg": 4.4,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 35000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 45000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 220000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe",
+    "image": "https://example.com",
+    "description": "A powerful, free photo editor and camera app that empowers your photography.",
+    "size": 210,
+    "reviews": 1200000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 800000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "image": "https://example.com",
+    "description": "Stay connected wherever you go – start or join a secure meeting with flawless video.",
+    "size": 155,
+    "reviews": 3200000,
+    "ratingAvg": 4.1,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 450000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1400000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Airbnb",
+    "companyName": "Airbnb",
+    "image": "https://example.com",
+    "description": "Book unique places to stay and things to do around the world.",
+    "size": 130,
+    "reviews": 850000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 550000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "image": "https://example.com",
+    "description": "Get a ride in minutes, or become a driver and earn money on your schedule.",
+    "size": 180,
+    "reviews": 10500000,
+    "ratingAvg": 4.2,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 2100000 },
+      { "name": "5 star", "count": 5300000 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "MasterClass",
+    "companyName": "MasterClass",
+    "image": "https://example.com",
+    "description": "Learn from the best. 100+ instructors across writing, cooking, design and more.",
+    "size": 55,
+    "reviews": 65000,
+    "ratingAvg": 4.8,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 13000 },
+      { "name": "5 star", "count": 45000 }
+    ]
+  }
+  ]
+
