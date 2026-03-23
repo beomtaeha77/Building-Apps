@@ -11,7 +11,7 @@ const ErrorPage = () => {
                 <h3 className='text-4xl text-center pb-5'>Oops, page not found!</h3>
                 <p className='text-center pb-4 text-[#627382]'>The page you are looking for is not available.</p>
                 <div className='text-center'>
-                    <button className='btn btn-primary'>Go Back!</button>
+                    <button className='btn btn-primary'><a href="/">Go Back!</a></button>
                 </div>
             </div>
         </div>
