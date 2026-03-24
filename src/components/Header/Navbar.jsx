@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-
+import logoimg from '../../assets/logo.png'
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -17,7 +17,12 @@ const Navbar = () => {
                         <li><Link to="/installation">Installation</Link></li>
                         </ul>
                 </div>
-    <a className="btn btn-ghost text-xl">HERO.IO</a>
+      <div className='flex'>
+           <Link to="/" className='flex'>
+               <img className='h-10' src={logoimg} alt="" />
+               <a className="btn btn-ghost text-xl text-violet-500">HERO.IO</a>
+          </Link>
+        </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
