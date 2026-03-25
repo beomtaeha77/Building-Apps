@@ -5,10 +5,42 @@ const Footer = () => {
     return (
         <div className='bg-[#001931]'>
               <div className='flex justify-between p-10'>
-                         <div className='flex gap-1'>
-                    <img className='h-10' src={logoimg} alt="" />
-                    <h3 className='text-white'>HERO.IO</h3>
-              </div>
+                        <div>          
+                              <a href="/">
+                                    <div className='flex gap-1'>
+                                 
+                                    <img className='h-10' src={logoimg} alt="" />
+                                     <h3 className='text-white'>HERO.IO</h3>
+                                 
+             
+                                          </div>
+                          </a>
+                          <div className=''>
+                                  <p className='text-[#627382]'>
+                                      We are a full-service digital agency dedicated <br /> to elevating brands through intentional design <br />and strategic development. By combining <br />creative storytelling with cutting-edge technology,<br />
+                                        we help businesses build meaningful connections <br />with their audiences and achieve measurable growth <br />in an ever-evolving digital landscape.
+                                </p>
+                          </div>
+                        </div>
+
+                     <div>
+                        <h4 className='text-white text-xl'>Serveices</h4>
+                              <div className='text-[#627382]'>
+                                     <li>UI/UX Design</li>
+                                     <li>Web Development</li>
+                                     <li>Brand Identity</li>
+                                     <li>SEO Strategy</li>
+                              </div>
+                     </div>
+                       <div>
+                        <h4 className='text-white text-xl'>Company</h4>
+                              <div className='text-[#627382]'>
+                                     <li>Our Story</li>
+                                     <li>The Team</li>
+                                     <li>Case Studies</li>
+                                     <li>Contact Us</li>
+                              </div>
+                     </div>
               
 
                     <div className='text-white '>
