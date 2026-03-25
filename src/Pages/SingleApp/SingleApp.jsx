@@ -1,18 +1,36 @@
-// import React, { use } from 'react';
-// import { useLoaderData } from 'react-router';
+import React, { use } from 'react';
+import { useLoaderData } from 'react-router';
 
 // import { useNavigate } from "react-router";
 
 
-import { useNavigate } from "react-router";
+ import { useNavigate } from "react-router";
 
-const SingleApp = ({ singleApp, isList = false }) => {
-    const { id, title, image, downloads, ratings, size } = singleApp;
+const SingleApp = ({ singleApp, isList = false, onUninstall  }) => {
+    const { id, title, companyName, image, downloads, ratingAvg, reviews, size } = singleApp;
     const navigate = useNavigate();
 
     const handleCardClick = () => {
         navigate(`/appdetails/${id}`);
     };
+
+    
+
+     const handleUninstall = (e) => {
+        e.stopPropagation(); 
+        
+       
+        const savedApps = JSON.parse(localStorage.getItem('installed-apps')) || [];
+        const updatedApps = savedApps.filter(appId => appId !== id);
+        localStorage.setItem('installed-apps', JSON.stringify(updatedApps));
+
+        
+        if (onUninstall) {
+            onUninstall(id);
+        }
+    };
+
+    
 
     
     const containerClasses = isList 
@@ -35,9 +53,9 @@ const SingleApp = ({ singleApp, isList = false }) => {
                 </div>
             </div>
 
-            {/* Only show Uninstall button in the List view */}
+            
             {isList && (
-                <button className="bg-[#00D094] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#00b884] transition-colors">
+                <button onClick={handleUninstall} className="bg-[#00D094] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#00b884] transition-colors">
                     Uninstall
                 </button>
             )}
@@ -50,19 +68,5 @@ export default SingleApp;
 
 
 
-// // 1. Create a specific handler for Uninstall
-// const handleUninstall = (e) => {
-//     e.stopPropagation(); // 👈 This is the magic line! 
-//     console.log("Uninstalling app:", id);
-//     // Add your delete/uninstall logic here
-// };
 
-// // 2. Update your button JSX
-// {isList && (
-//     <button 
-//         onClick={handleUninstall} // Use the new handler
-//         className="bg-[#00D094] text-white px-6 py-2 rounded-md font-semibold"
-//     >
-//         Uninstall
-//     </button>
-// )}
+
