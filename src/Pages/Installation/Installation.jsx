@@ -11,15 +11,17 @@ const Installation = () => {
     const [sort, setSort] = useState(";")
     const data = useLoaderData();
 
-    useEffect(() => {
-        const storedAppData = getStoredApp();
-        const convertedStoredApps = storedAppData.map(id => parseInt(id));
-        
-        
-        const installedApps = data.filter(app => convertedStoredApps.includes(app.id));
-        setInstalledAppsList(installedApps);
+   
+  useEffect(() => {
+       
+        if (data && Array.isArray(data)) {
+            const storedAppData = getStoredApp();
+            const convertedStoredApps = storedAppData.map(id => parseInt(id));
+            
+            const installedApps = data.filter(app => convertedStoredApps.includes(app.id));
+            setInstalledAppsList(installedApps);
+        }
     }, [data]);
-
 
 
     const handleSort =(type) => {

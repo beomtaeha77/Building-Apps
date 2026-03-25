@@ -27,4 +27,10 @@ const addToStoredDB = (id) => {
 
 }
 
-export {addToStoredDB, getStoredApp};
+const removeFromLocalStorage = id => {
+    const storedApp = getStoredApp()
+     const remainingApp = storedApp.filter(storedId =>storedId !== id);
+     localStorage.setItem("appList", JSON.stringify(remainingApp))
+}
+
+export {addToStoredDB, getStoredApp, removeFromLocalStorage};

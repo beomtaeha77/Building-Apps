@@ -4,7 +4,7 @@ import logoimg from '../../assets/logo.png'
 const Footer = () => {
     return (
         <div className='bg-[#001931]'>
-              <div className='flex justify-between p-10'>
+              <div className='grid lg:grid-cols-4 justify-between p-10'>
                         <div>          
                               <a href="/">
                                     <div className='flex gap-1'>
@@ -16,9 +16,9 @@ const Footer = () => {
                                           </div>
                           </a>
                           <div className=''>
-                                  <p className='text-[#627382]'>
-                                      We are a full-service digital agency dedicated <br /> to elevating brands through intentional design <br />and strategic development. By combining <br />creative storytelling with cutting-edge technology,<br />
-                                        we help businesses build meaningful connections <br />with their audiences and achieve measurable growth <br />in an ever-evolving digital landscape.
+                                  <p className='text-[#627382] mr-8'>
+                                      We are a full-service digital agency dedicated  to elevating brands through intentional design and strategic development. By combining creative storytelling with cutting-edge technology,
+                                        we help businesses build meaningful connections with their audiences and achieve measurable growth  in an ever-evolving digital landscape.
                                 </p>
                           </div>
                         </div>

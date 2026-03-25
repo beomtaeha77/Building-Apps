@@ -1,10 +1,12 @@
 import React, { use } from 'react';
 import { useLoaderData } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify';
 
 // import { useNavigate } from "react-router";
 
 
  import { useNavigate } from "react-router";
+import { removeFromLocalStorage } from '../../Utility/addToDB';
 
 const SingleApp = ({ singleApp, isList = false, onUninstall  }) => {
     const { id, title, companyName, image, downloads, ratingAvg, reviews, size } = singleApp;
@@ -17,8 +19,19 @@ const SingleApp = ({ singleApp, isList = false, onUninstall  }) => {
     
 
      const handleUninstall = (e) => {
+         toast.success('🦄 Uninstalled Successfully!', {
+                       position: "top-center",
+                     autoClose: 5000,
+                       hideProgressBar: false,
+                    closeOnClick: false,
+                       pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                          theme: "light",
+                        // transition: Bounce,
+                          });
         e.stopPropagation(); 
-        
+        removeFromLocalStorage(id);
        
         const savedApps = JSON.parse(localStorage.getItem('installed-apps')) || [];
         const updatedApps = savedApps.filter(appId => appId !== id);
@@ -28,7 +41,7 @@ const SingleApp = ({ singleApp, isList = false, onUninstall  }) => {
         if (onUninstall) {
             onUninstall(id);
         }
-    };
+     };
 
     
 
@@ -53,11 +66,28 @@ const SingleApp = ({ singleApp, isList = false, onUninstall  }) => {
                 </div>
             </div>
 
+
+            <ToastContainer 
+                     position="top-center"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                         newestOnTop={false}
+                          closeOnClick={false}
+                         rtl={false}
+                       pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                       theme="light"
+                    //    transition={Bounce}
+                       />
+
             
             {isList && (
+                
                 <button onClick={handleUninstall} className="bg-[#00D094] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#00b884] transition-colors">
                     Uninstall
                 </button>
+                 
             )}
         </div>
     );

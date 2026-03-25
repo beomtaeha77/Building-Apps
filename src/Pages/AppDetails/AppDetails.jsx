@@ -5,23 +5,22 @@ import { addToStoredDB } from '../../Utility/addToDB';
 import { Download, Star, MessageSquare } from 'lucide-react';
 
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-
-
-
-
-
-
-
-
+import { ToastContainer, toast } from 'react-toastify';
+// import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
 
 
 const AppDetails = () => {
     const { id } = useParams();
     const appId = parseInt(id);
-    const data = useLoaderData();
+    const loaderData = useLoaderData();
     const [isInstalled, setIsInstalled] = useState(false);
 
-    const singleData = data.find(app => app.id === appId);
+    const apps = Array.isArray(loaderData) 
+        ? loaderData 
+        : (loaderData?.apps || loaderData?.data || []);
+
+    const singleData = apps.find(app => app.id === appId);
     
 
            const ratingsData = singleData?.ratings ? [...singleData.ratings].reverse() : [];
@@ -35,10 +34,39 @@ const AppDetails = () => {
 
     const { title, image, companyName, size, downloads, ratingAvg, reviews, description } = singleData || {};
 
+    
+
+
+
+        //   const MySwal = withReactContent(Swal)
+
+
     const handleAppInstalled = () => {
+
+         toast.success('🦄 Installed Successfully!', {
+               position: "top-center",
+             autoClose: 5000,
+               hideProgressBar: false,
+            closeOnClick: false,
+               pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                  theme: "light",
+                // transition: Bounce,
+                  });
         addToStoredDB(appId);
         setIsInstalled(true);
-    };
+
+    //     MySwal.fire({
+    //            title: <p>Hello World</p>,
+    //             didOpen: () => {
+    // // `MySwal` is a subclass of `Swal` with all the same instance & static methods
+    //            MySwal.showLoading()
+    //             },
+    //          }).then(() => {
+    //          return MySwal.fire(<p>Shorthand works too</p>)
+    //             })
+     };
 
     
     const formatNum = (num) => {
@@ -93,7 +121,19 @@ const AppDetails = () => {
                         </div>
                     </div>
 
-                    
+                     <ToastContainer 
+                     position="top-center"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                         newestOnTop={false}
+                          closeOnClick={false}
+                         rtl={false}
+                       pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                       theme="light"
+                    //    transition={Bounce}
+                       />
                     <button 
                         onClick={handleAppInstalled} 
                         disabled={isInstalled}

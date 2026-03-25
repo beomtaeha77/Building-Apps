@@ -7,13 +7,28 @@ import ErrorApp from '../ErrorApp/ErrorApp';
 const Apps = () => {
    
 
- const allApps = useLoaderData();
+ const loaderData = useLoaderData();
+
+  const initialApps = Array.isArray(loaderData) 
+        ? loaderData 
+        : (loaderData?.apps || loaderData?.data || []);
+        
+    const [allApps, setAllApps] = useState(initialApps);
+
+//  const allApps = Array.isArray(loaderData) 
+//         ? loaderData 
+//         : (loaderData?.apps || loaderData?.data || []);
 
 const [searchApp, setSearchApp] = useState('');
 
  const filteredApps = allApps.filter(app =>
         app.title.toLowerCase().includes(searchApp.toLowerCase())
     );
+
+     const handleUninstall = (id) => {
+        const remaining = allApps.filter(app => app.id !== id);
+        setAllApps(remaining); 
+    };
 
     return (
         <div>
@@ -45,20 +60,16 @@ const [searchApp, setSearchApp] = useState('');
             <div className='grid lg:grid-cols-4 gap-5'>
                
 
-                {/* <Suspense fallback={<span>Loading...</span>}>
-                     {allApps && allApps.map((app) => (
-                        <SingleApp key={app.id} singleApp={app}></SingleApp>
-                     ))}
-                </Suspense> */}
+               
 
                 <Suspense fallback={<span>Loading...</span>}>
                     {filteredApps.length > 0 ? (
                         filteredApps.map((app) => (
-                            <SingleApp key={app.id} singleApp={app}></SingleApp>
+                            <SingleApp key={app.id} singleApp={app} onUninstall={handleUninstall} ></SingleApp>
                         ))
                     ) : (
                         <div className="col-span-4 text-center py-10">
-                            {/* <h3 className="text-xl text-gray-500">No App Found</h3> */}
+                           
                             <ErrorApp></ErrorApp>
                         </div>
                     )}
