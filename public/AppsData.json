@@ -94,7 +94,7 @@
     "id": 6,
     "title": "OffScreen: Screen Time Control",
     "companyName": "Apple",
-    "image": "../public/assets/demo-app (5).webp",
+    "image": "/assets/demo-app (5).webp",
     "description": "Organize anything, together. Trello’s boards, lists, and cards enable you to organize projects.",
     "size": 65,
     "reviews": 110000,
