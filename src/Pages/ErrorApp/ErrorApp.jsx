@@ -1,5 +1,5 @@
 import React from 'react';
-import errorAppImg from '../../assets/App-Error.png'
+import errorAppImg from '../../../public/assets/App-Error.png'
 const ErrorApp = () => {
     return (
         <div className='max-w-6xl mx-auto'>
